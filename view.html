@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>למכירה | רחוב מוזיר 5 | 4,690,000 ₪</title>
+<title>למכירה | רחוב מוזיר 5 | 4,490,000 ₪</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap');
 
@@ -235,6 +235,35 @@
     color: rgba(255,255,255,0.35);
   }
 
+  /* ── MOBILE ── */
+  @media (max-width: 640px) {
+    .hero { height: 320px; }
+    .hero-overlay { padding: 28px 24px; }
+    .hero h1 { font-size: 38px; }
+    .hero .subtitle { font-size: 16px; }
+    .price-bar { padding: 18px 24px; }
+    .price-main { font-size: 30px; }
+    .stats { gap: 24px; }
+    .stat-value { font-size: 20px; }
+    .content { padding: 24px 16px; }
+
+    .photo-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: none;
+      grid-auto-rows: 150px;
+    }
+    .photo-wide { grid-column: span 2; }
+    .photo-plan {
+      grid-column: span 2;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+
+    .two-col { grid-template-columns: 1fr; }
+    .card, .card-dark { padding: 22px 20px; }
+    .footer { padding: 26px 24px; }
+  }
+
   /* ── PRINT ── */
   @media print {
     body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -261,7 +290,7 @@
 <div class="price-bar">
   <div>
     <div class="price-label">מחיר מבוקש</div>
-    <div class="price-main">4,690,000 ₪</div>
+    <div class="price-main">4,490,000 ₪</div>
   </div>
   <div class="stats">
     <div class="stat">
@@ -341,7 +370,7 @@
         <li class="bullet">40 מ"ר מרפסת גדולה</li>
         <li class="bullet">סלון מרווח ומואר</li>
         <li class="bullet">מטבח, 2 חדרי שינה, מקלחת</li>
-        <li class="bullet">מחיר: <strong>4,690,000 ₪</strong></li>
+        <li class="bullet">מחיר: <strong>4,490,000 ₪</strong></li>
       </ul>
     </div>
 
@@ -352,7 +381,7 @@
 <!-- FOOTER -->
 <div class="footer">
   <div class="footer-address">רחוב מוזיר 5 · תל אביב</div>
-  <div class="footer-price">4,690,000 ₪ &nbsp;·&nbsp; 86 מ״ר + 40 מ״ר מרפסת</div>
+  <div class="footer-price">4,490,000 ₪ &nbsp;·&nbsp; 86 מ״ר + 40 מ״ר מרפסת</div>
   <div class="footer-note">לפרטים ותיאום ביקור — צרו קשר</div>
 </div>
 
