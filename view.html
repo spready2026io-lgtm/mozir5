@@ -122,10 +122,20 @@
   }
   .photo-grid img:hover { opacity: 0.92; }
   .photo-wide { grid-column: span 2; }
-  .photo-plan {
+
+  /* ── FLOORPLAN ── */
+  .floorplan-block {
     background: #f8f6f3;
-    object-fit: contain;
-    padding: 8px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .floorplan-block img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin: 8px auto 0;
   }
 
   /* ── TWO COL ── */
@@ -253,11 +263,7 @@
       grid-auto-rows: 150px;
     }
     .photo-wide { grid-column: span 2; }
-    .photo-plan {
-      grid-column: span 2;
-      height: auto;
-      aspect-ratio: 1 / 1;
-    }
+    .floorplan-block { padding: 12px; }
 
     .two-col { grid-template-columns: 1fr; }
     .card, .card-dark { padding: 22px 20px; }
@@ -319,7 +325,13 @@
     <img src="photos/bedroom1.jpg" alt="חדר שינה">
     <img src="photos/salon_mirpeset.jpg" alt="סלון ומרפסת">
     <img src="photos/garden1.jpg" alt="גינה" class="photo-wide">
-    <img src="photos/floorplan.jpg" alt="תוכנית הדירה" class="photo-plan">
+    <img src="photos/bedroom2.jpg" alt="חדר שינה">
+  </div>
+
+  <!-- FLOORPLAN (full width, full view) -->
+  <div class="floorplan-block">
+    <div class="section-title">תוכנית הדירה</div>
+    <img src="photos/floorplan.jpg" alt="תוכנית הדירה">
   </div>
 
   <!-- DESCRIPTION + LOCATION -->
